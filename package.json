@@ -1,4 +1,20 @@
-"dependencies": {
-    "dotenv": "^16.0.0",
-    "express": "^4.18.0"
+{
+  "name": "roblox-firebase-api",
+  "version": "1.0.0",
+  "description": "API pour vérifier les utilisateurs Roblox via Firebase",
+  "main": "api.js",
+  "type": "module",
+  "scripts": {
+    "start": "node api.js",
+    "dev": "node --watch api.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase": "^11.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
