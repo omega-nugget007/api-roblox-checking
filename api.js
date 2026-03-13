@@ -4,6 +4,9 @@ import cors from "cors";
 import { initializeApp } from "firebase/app";
 import { getDatabase, ref, get } from "firebase/database";
 
+app.get("/health", (req, res) => res.json({ status: "ok" }));
+
+
 const app = express();
 app.use(cors());
 app.use(express.json());
